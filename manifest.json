@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Quill2Byte",
+    "version": "1.0.0",
+    "description": "Your Shakespearean Translator",
+    "icons": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    },
+    "permissions": ["activeTab"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "script.js",
+      "default_title": "Quill2Byte"
+    },
+    "content_scripts": [
+      {
+        "matches": ["http://google.com/*", "https://chatgpt.com/*", "http://127.0.0.1:8000/api/translate/"],
+        "js": ["popup.js", "script.js"]
+      }
+    ]
+  }
+  
