@@ -11,7 +11,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
 
 async function sendDataToServer(data) {
     try {
-        const url = 'http://127.0.0.1:8000/api/translate/';
+        const url = 'https://quill2byte.onrender.com/api/translate/';
         const response = await fetch(url, {
             method: 'POST',
             headers: {
