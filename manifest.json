@@ -18,7 +18,7 @@
     },
     "content_scripts": [
       {
-        "matches": ["http://google.com/*", "https://chatgpt.com/*", "http://127.0.0.1:8000/api/translate/"],
+        "matches": ["http://google.com/*", "https://chatgpt.com/*", "https://quill2byte.onrender.com/api/translate/"],
         "js": ["popup.js", "script.js"]
       }
     ]
